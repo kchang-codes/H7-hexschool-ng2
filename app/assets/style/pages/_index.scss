@@ -1,0 +1,13 @@
+// collection
+.collection {
+    width: 100%;
+    @include bg-cover("../images/img1.jpg", 400px, center);
+
+    @include media-breakpoint-up(md) {
+        height: 500px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 864px;
+    }
+}

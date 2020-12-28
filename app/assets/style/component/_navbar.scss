@@ -1,0 +1,31 @@
+.navbar-brand {
+    width: 112px;
+    height: 48px;
+    display: block;
+    background-image: url(./../../../assets/images/logo-fixie.svg);
+}
+
+.navbar-light {
+    background-color: $white;
+    border-bottom: 1px solid $black;
+    .navbar-nav {
+      .nav-link {
+        color: $primary;
+        font-weight: $font-weight-bold;
+        font-family: lato;
+        padding-left: $spacer * 3;
+  
+        &:hover,
+        &:focus {
+          color: $secondary;
+          text-decoration: $link-hover-decoration;
+        }
+      }
+  
+      .show > .nav-link,
+      .nav-link.active {
+        color: $primary;
+        text-decoration: $link-hover-decoration;
+      }
+    }
+  }

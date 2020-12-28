@@ -1,0 +1,16 @@
+@mixin text-hidden($url) {
+    background-image: url($url);
+    overflow: hidden;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    background-position: center;
+    white-space: nowrap;
+}
+
+@mixin bg-cover($url, $height, $position) {
+    background-image: url($url);
+    height: $height;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: $position;
+}
